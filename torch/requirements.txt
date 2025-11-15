@@ -1,28 +1,11 @@
 # 深度学习和计算机视觉
 numpy==2.2.6
-torch==2.8.0
-torchvision==0.23.0
-
-faiss-cpu==1.12.0
-tqdm==4.67.1
-Pillow==11.3.0
-opencv-contrib-python==4.12.0.88
-ultralytics
-# clip @ git+https://github.com/openai/CLIP.git
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+torchvision==0.23.0+cpu
 
 # Web框架和API
 flask>=3.0.0
 flask-restful>=0.3.10
 flask-cors>=4.0.0
 
-# 数据验证和序列化
-marshmallow>=3.20.0
-
-# 数据库
-PyMySQL==1.1.0
-
-# 系统和工具
-psutil==7.0.0
-werkzeug>=3.0.0
-
-tos~=2.8.7

@@ -32,13 +32,6 @@ COPY requirements.txt .
 # 安装 Python 依赖
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# 安装 CLIP（固定到特定 commit 以确保版本一致性）
-RUN git clone https://github.com/openai/CLIP.git /tmp/clip && \
-    cd /tmp/clip && \
-    git checkout dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1 && \
-    python3 setup.py install && \
-    rm -rf /tmp/clip
-
 # 复制应用代码
 COPY . .
 

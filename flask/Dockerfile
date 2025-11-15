@@ -33,7 +33,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 暴露端口（根据你的应用调整）
-EXPOSE 10000
+EXPOSE 10001
 
 # 设置启动命令（根据你的应用调整）
 CMD ["python3", "app.py"]

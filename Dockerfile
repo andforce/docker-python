@@ -45,4 +45,4 @@ COPY . .
 EXPOSE 10000
 
 # 设置启动命令（根据你的应用调整）
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
